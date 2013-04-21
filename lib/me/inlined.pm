@@ -77,8 +77,6 @@ credit for the idea belongs to Linda Walsh.
 
 * L<mem>
 
-* L<Inlined::Package>
-
 =end :list
 
 =cut
