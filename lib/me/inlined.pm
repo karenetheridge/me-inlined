@@ -73,7 +73,7 @@ credit for the idea belongs to Linda Walsh.
 
 =head1 SEE ALSO
 
--=begin :list
+=begin :list
 
 * L<mem>
 
