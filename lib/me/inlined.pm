@@ -43,7 +43,7 @@ one package in another, you'll have discovered why it's much
 easier to simply follow best practices and define one package per file.
 
 However, this module will let you minimize your inode usage:
-simply add C<<use me::inlined>> in any package that you want to refer to in
+simply add C<< use me::inlined >> in any package that you want to refer to in
 other namespaces in the same file, and you can
 (probably) safely define and use packages in any order.
 
