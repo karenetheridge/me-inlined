@@ -2,6 +2,7 @@ use strict;
 use warnings;
 package me::inlined;
 # ABSTRACT: EXPERIMENTAL - define multiple packages in one file, and reference them in any order
+# vim: set ts=8 sw=4 tw=78 et :
 
 use Module::Runtime 'module_notional_filename';
 
