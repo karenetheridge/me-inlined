@@ -53,8 +53,12 @@ simply add C<< use me::inlined >> in any package that you want to refer to in
 other namespaces in the same file, and you can
 (probably) safely define and use packages in any order.
 
+This will also let you do C<< require Foo; >> in other code, after the F<.pm>
+file containing C<Foo> has been loaded, without C<require> complaining that
+it cannot find F<Foo.pm> in C<@INC>.
+
 This module is for demonstration purposes only, and in no way am I
-recommending you use this in any production code whatsoever.
+recommending you use this in any real code whatsoever.
 
 =head1 FUNCTIONS/METHODS
 
@@ -62,6 +66,8 @@ There is no public API other than the C<use> directive itself, which takes no
 arguments.
 
 =head1 SUPPORT
+
+=for stopwords irc
 
 Bugs may be submitted through L<the RT bug tracker|https://rt.cpan.org/Public/Dist/Display.html?Name=me-inlined>
 (or L<mailto:bug-me-inlined@rt.cpan.org>).
@@ -82,6 +88,7 @@ credit for the idea belongs to Linda Walsh.
 =begin :list
 
 * L<mem>
+* L<thanks>
 
 =end :list
 
