@@ -1,12 +1,16 @@
-# NAME
+=pod
+
+=encoding UTF-8
+
+=head1 NAME
 
 me::inlined - EXPERIMENTAL - define multiple packages in one file, and reference them in any order
 
-# VERSION
+=head1 VERSION
 
-version 0.001
+version 0.002
 
-# SYNOPSIS
+=head1 SYNOPSIS
 
 before:
 
@@ -23,52 +27,70 @@ after:
     package Bar;
     use Foo;                        # no kaboom!
 
-# DESCRIPTION
+=head1 DESCRIPTION
 
-If you've ever defined multiple packages in the same file, but want to `use`
+If you've ever defined multiple packages in the same file, but want to C<use>
 one package in another, you'll have discovered why it's much
 easier to simply follow best practices and define one package per file.
 
 However, this module will let you minimize your inode usage:
-simply add `<use me::inlined`\> in any package that you want to refer to in
+simply add C<< use me::inlined >> in any package that you want to refer to in
 other namespaces in the same file, and you can
 (probably) safely define and use packages in any order.
 
+This will also let you do C<< require Foo; >> in other code, after the F<.pm>
+file containing C<Foo> has been loaded, without C<require> complaining that
+it cannot find F<Foo.pm> in C<@INC>.
+
 This module is for demonstration purposes only, and in no way am I
-recommending you use this in any production code whatsoever.
+recommending you use this in any real code whatsoever.
 
-# FUNCTIONS/METHODS
+=head1 FUNCTIONS/METHODS
 
-There is no public API other than the `use` directive itself, which takes no
+There is no public API other than the C<use> directive itself, which takes no
 arguments.
 
-# SUPPORT
+=head1 SUPPORT
 
-Bugs may be submitted through [the RT bug tracker](https://rt.cpan.org/Public/Dist/Display.html?Name=me-inlined)
-(or [mailto:bug-me-inlined@rt.cpan.org](mailto:bug-me-inlined@rt.cpan.org)).
-I am also usually active on irc, as 'ether' at `irc.perl.org`.
+=for stopwords irc
 
-# CAVEATS
+Bugs may be submitted through L<the RT bug tracker|https://rt.cpan.org/Public/Dist/Display.html?Name=me-inlined>
+(or L<mailto:bug-me-inlined@rt.cpan.org>).
+I am also usually active on irc, as 'ether' at C<irc.perl.org>.
+
+=head1 CAVEATS
 
 There may be edge cases where this doesn't work right, or leads to infinite
 looping when trying to compile modules. Use at your own risk!
 
-# ACKNOWLEDGEMENTS
+=head1 ACKNOWLEDGEMENTS
 
-This module was inspired by a conversation witnessed on `modules@perl.org` --
+This module was inspired by a conversation witnessed on C<modules@perl.org> --
 credit for the idea belongs to Linda Walsh.
 
-# SEE ALSO
+=head1 SEE ALSO
 
-- [mem](http://search.cpan.org/perldoc?mem)
+=over 4
 
-# AUTHOR
+=item *
+
+L<mem>
+
+=item *
+
+L<thanks>
+
+=back
+
+=head1 AUTHOR
 
 Karen Etheridge <ether@cpan.org>
 
-# COPYRIGHT AND LICENSE
+=head1 COPYRIGHT AND LICENSE
 
 This software is copyright (c) 2013 by Karen Etheridge.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
+
+=cut
