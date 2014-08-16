@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+          - a bit of documentation tweaking
 
 0.001     2013-04-21 21:55:41Z
           - Initial release.
