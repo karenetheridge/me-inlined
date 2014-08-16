@@ -15,6 +15,10 @@ sub import
     $::INC{$filename} = $caller_file;
 }
 
+{
+    no strict 'refs';
+    delete ${ __PACKAGE__ . '::' }{module_notional_filename};
+}
 1;
 __END__
 
