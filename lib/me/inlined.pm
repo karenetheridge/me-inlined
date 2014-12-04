@@ -81,7 +81,7 @@ looping when trying to compile modules. Use at your own risk!
 =head1 ACKNOWLEDGEMENTS
 
 This module was inspired by a conversation witnessed on C<modules@perl.org> --
-credit for the idea belongs to Linda Walsh.
+credit for the idea belongs to L<Linda Walsh|https://metacpan.org/author/LAWALSH>.
 
 =head1 SEE ALSO
 
