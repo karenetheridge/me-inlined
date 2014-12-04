@@ -1,3 +1,4 @@
+use 5.006;
 use strict;
 use warnings;
 package me::inlined;
@@ -5,20 +6,16 @@ package me::inlined;
 # KEYWORDS: development module package file inline declaration
 # vim: set ts=8 sw=4 tw=78 et :
 
-use Module::Runtime 'module_notional_filename';
+use Module::Runtime ();
 
 sub import
 {
     my $self = shift;
     my ($caller, $caller_file) = caller;
-    my $filename = module_notional_filename($caller);
+    my $filename = Module::Runtime::module_notional_filename($caller);
     $::INC{$filename} = $caller_file;
 }
 
-{
-    no strict 'refs';
-    delete ${ __PACKAGE__ . '::' }{module_notional_filename};
-}
 1;
 __END__
 
@@ -81,7 +78,7 @@ looping when trying to compile modules. Use at your own risk!
 =head1 ACKNOWLEDGEMENTS
 
 This module was inspired by a conversation witnessed on C<modules@perl.org> --
-credit for the idea belongs to Linda Walsh.
+credit for the idea belongs to L<Linda Walsh|https://metacpan.org/author/LAWALSH>.
 
 =head1 SEE ALSO
 
