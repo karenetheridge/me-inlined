@@ -2,6 +2,7 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+          - Explicitly require perl version in code
           - Made reference to LAWALSH be a link to her MetaCPAN author page
 
 0.002     2014-08-16 22:27:52Z
