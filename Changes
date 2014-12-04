@@ -2,6 +2,8 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+          - Don't import module_notional_filename() from Module::Runtime,
+            then we don't have to clean it out of the namespace.
           - Made reference to LAWALSH be a link to her MetaCPAN author page
 
 0.002     2014-08-16 22:27:52Z

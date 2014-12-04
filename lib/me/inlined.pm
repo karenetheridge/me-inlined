@@ -5,20 +5,16 @@ package me::inlined;
 # KEYWORDS: development module package file inline declaration
 # vim: set ts=8 sw=4 tw=78 et :
 
-use Module::Runtime 'module_notional_filename';
+use Module::Runtime ();
 
 sub import
 {
     my $self = shift;
     my ($caller, $caller_file) = caller;
-    my $filename = module_notional_filename($caller);
+    my $filename = Module::Runtime::module_notional_filename($caller);
     $::INC{$filename} = $caller_file;
 }
 
-{
-    no strict 'refs';
-    delete ${ __PACKAGE__ . '::' }{module_notional_filename};
-}
 1;
 __END__
 
