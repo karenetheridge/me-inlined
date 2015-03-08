@@ -81,11 +81,8 @@ credit for the idea belongs to L<Linda Walsh|https://metacpan.org/author/LAWALSH
 
 =head1 SEE ALSO
 
-=begin :list
-
+=for :list
 * L<mem>
 * L<thanks>
-
-=end :list
 
 =cut
