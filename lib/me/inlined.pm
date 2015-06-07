@@ -5,6 +5,8 @@ package me::inlined;
 # KEYWORDS: development module package file inline declaration
 # vim: set ts=8 sw=4 tw=78 et :
 
+our $VERSION = '0.004';
+
 use Module::Runtime ();
 
 sub import
