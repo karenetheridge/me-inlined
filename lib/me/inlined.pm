@@ -3,7 +3,7 @@ use warnings;
 package me::inlined;
 # ABSTRACT: EXPERIMENTAL - define multiple packages in one file, and reference them in any order
 # KEYWORDS: development module package file inline declaration
-# vim: set ts=8 sts=4 sw=4 tw=78 et :
+# vim: set ts=8 sts=4 sw=4 tw=115 et :
 
 our $VERSION = '0.004';
 
