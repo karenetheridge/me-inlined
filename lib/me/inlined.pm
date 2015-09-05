@@ -63,14 +63,6 @@ recommending you use this in any real code whatsoever.
 There is no public API other than the C<use> directive itself, which takes no
 arguments.
 
-=head1 SUPPORT
-
-=for stopwords irc
-
-Bugs may be submitted through L<the RT bug tracker|https://rt.cpan.org/Public/Dist/Display.html?Name=me-inlined>
-(or L<mailto:bug-me-inlined@rt.cpan.org>).
-I am also usually active on irc, as 'ether' at C<irc.perl.org>.
-
 =head1 CAVEATS
 
 There may be edge cases where this doesn't work right, or leads to infinite
