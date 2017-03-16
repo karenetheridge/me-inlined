@@ -8,7 +8,7 @@ me::inlined - EXPERIMENTAL - define multiple packages in one file, and reference
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 SYNOPSIS
 
@@ -50,14 +50,6 @@ recommending you use this in any real code whatsoever.
 There is no public API other than the C<use> directive itself, which takes no
 arguments.
 
-=head1 SUPPORT
-
-=for stopwords irc
-
-Bugs may be submitted through L<the RT bug tracker|https://rt.cpan.org/Public/Dist/Display.html?Name=me-inlined>
-(or L<mailto:bug-me-inlined@rt.cpan.org>).
-I am also usually active on irc, as 'ether' at C<irc.perl.org>.
-
 =head1 CAVEATS
 
 There may be edge cases where this doesn't work right, or leads to infinite
@@ -82,21 +74,28 @@ L<thanks>
 
 =back
 
+=head1 SUPPORT
+
+Bugs may be submitted through L<the RT bug tracker|https://rt.cpan.org/Public/Dist/Display.html?Name=me-inlined>
+(or L<bug-me-inlined@rt.cpan.org|mailto:bug-me-inlined@rt.cpan.org>).
+
+I am also usually active on irc, as 'ether' at C<irc.perl.org>.
+
 =head1 AUTHOR
 
 Karen Etheridge <ether@cpan.org>
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2013 by Karen Etheridge.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
 
 =head1 CONTRIBUTOR
 
 =for stopwords Neil Bowers
 
 Neil Bowers <neil@bowers.com>
+
+=head1 COPYRIGHT AND LICENCE
+
+This software is copyright (c) 2013 by Karen Etheridge.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
