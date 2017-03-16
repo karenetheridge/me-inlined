@@ -5,7 +5,7 @@ package me::inlined;
 # ABSTRACT: EXPERIMENTAL - define multiple packages in one file, and reference them in any order
 # KEYWORDS: development module package file inline declaration
 
-our $VERSION = '0.004';
+our $VERSION = '0.005';
 
 use Module::Runtime ();
 
